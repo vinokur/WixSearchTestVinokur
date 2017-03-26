@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  */
 public abstract class Page {
 
-  protected WebDriver driver;
+  public WebDriver driver;
 
   /*
    * Constructor injecting the WebDriver interface
@@ -21,9 +21,7 @@ public abstract class Page {
     this.driver = driver;
   }
 
-  public String getTitle() {
-    return driver.getTitle();
-  }
+
   public void setElementText(WebElement element, String text) {
     element.click();
     element.clear();
